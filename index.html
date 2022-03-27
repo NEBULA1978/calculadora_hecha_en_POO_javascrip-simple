@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-center mt-5">Calculadora</h1>
+        <div class="row" id="antes">
+            <div class="col-md-6">
+                <form id="form-resolve">
+                    <div class="form-group">
+                        <label>numero 1</label>
+                        <input class="form-control" type="number" id="numero1">
+                    </div>
+
+                    <div class="form-group">
+                        <label>numero 2</label>
+                        <input class="form-control" type="number" id="numero2">
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-3">
+                            <input type="checkbox" id="checkS">
+                            <label>Sumar</label>
+                        </div>
+                        <div class="col-md-9">
+                            <input class="form-control" type="number" disabled id="Sum">
+                        </div>
+                    </div>
+                    <div class="col-md-9">
+
+
+
+                        <div class="row mt-4">
+
+                            <div class="col-md-6">
+                                <input class="form-control btn btn-outline-success" type="submit" value="Operar">
+                            </div>
+                            <div class="col-md-6">
+                                <input class="form-control btn btn-outline-info" type="reset" value="Resetear">
+                            </div>
+
+                        </div>
+
+                </form>
+                </div>
+                <div class="col-md-6" id="resultados">
+
+                </div>
+            </div>
+        </div>
+
+        <script src="app.js"></script>
+
+</body>
+
+</html>
